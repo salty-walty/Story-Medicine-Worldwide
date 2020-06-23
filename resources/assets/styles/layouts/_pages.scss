@@ -1,0 +1,125 @@
+.single-page {
+  padding: 1% 5% 1 % 5%;
+}
+
+.pad-it {
+  padding: 1% 5% 1 % 5%;
+}
+
+.mountians {
+  width: 100%;
+  height: auto;
+}
+
+.about-paragraphs {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.about-them {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.center-it {
+  text-align: center;
+}
+
+.pad-the-top {
+  padding-top: 3.5%;
+}
+
+.page-template-contact {
+  h4 {
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .contact-head {
+    height: 30rem;
+  }
+
+  .contact-head-too {
+    height: 30rem;
+  }
+
+  .wpcf7-submit {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.7rem;
+    font-weight: 300;
+    border-radius: 1px;
+    left: auto;
+    color: #a69dc2;
+    background-color: white;
+    border: 1px solid #a69dc2;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover {
+      background-color: #a69dc2;
+      text-decoration: none;
+      background-image: none;
+      color: white;
+    }
+  }
+}
+
+.page-single {
+  .heady {
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      padding-bottom: 1.5%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.full-wide {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .bi-chevron-up {
+    display: none;
+  }
+
+  h5 {
+    display: inline-block;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.full-wide.wide-open {
+  .bi-chevron-down {
+    display: none;
+  }
+
+  .bi-chevron-up {
+    display: inline-block;
+  }
+}
+

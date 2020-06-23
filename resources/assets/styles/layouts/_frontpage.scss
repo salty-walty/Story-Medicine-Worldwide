@@ -1,0 +1,461 @@
+.carousel-control-prev {
+  position: absolute;
+  // top: 40%;
+  // bottom: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: left;
+  width: 10%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-next {
+  position: absolute;
+  // top: 40%;
+  // bottom: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  width: 10%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+main .banner {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  .carousel {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+
+    .take-an-action {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      top: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .ze-action {
+        background: rgba(54, 54, 54, 0.5);
+        padding: 1%;
+
+        h2 {
+          color: white;
+        }
+
+        button {
+          font-size: 100%;
+          margin: 0;
+          line-height: 1;
+          cursor: pointer;
+          position: relative;
+          text-decoration: none;
+          overflow: visible;
+          padding: 0.7rem;
+          font-weight: 300;
+          border-radius: 1px;
+          left: auto;
+          color: white;
+          background-color: #a69dc2;
+          border: 1px solid white;
+          display: inline-block;
+          background-image: none;
+          box-shadow: none;
+          text-shadow: none;
+
+          &:hover {
+            background-color: white;
+            text-decoration: none;
+            background-image: none;
+            border: 1px solid #a69dc2;
+            color: #a69dc2;
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: left;
+      width: 5%;
+      color: #fff;
+      text-align: center;
+      opacity: 0.9;
+      -webkit-transition: opacity 0.15s ease;
+      -o-transition: opacity 0.15s ease;
+      transition: opacity 0.15s ease;
+    }
+
+    .carousel-control-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: flex-end;
+      width: 5%;
+      color: #fff;
+      text-align: center;
+      opacity: 0.9;
+      -webkit-transition: opacity 0.15s ease;
+      -o-transition: opacity 0.15s ease;
+      transition: opacity 0.15s ease;
+    }
+  }
+}
+
+.creation {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.apparel {
+  background-size: cover !important;
+  margin: 0 auto;
+  font-size: 1.3rem;
+
+  a {
+    height: 100%;
+    width: 100%;
+    color: white;
+  }
+}
+
+.household {
+  background-size: cover !important;
+  margin: 0 auto;
+  font-size: 1.3rem;
+
+  a {
+    height: 100%;
+    width: 100%;
+    color: black;
+  }
+}
+
+.mother {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-products {
+  height: 16rem;
+  width: 98%;
+  border-radius: 2px;
+  margin-bottom: 2%;
+
+  .featured-product {
+    max-height: 15rem;
+    width: auto;
+  }
+}
+
+.ig-section {
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  #sb_instagram #sbi_load .sbi_load_btn,
+  #sb_instagram .sbi_follow_btn a {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.7rem;
+    font-weight: 300;
+    border-radius: 1px;
+    left: auto;
+    color: #a69dc2;
+    background-color: white;
+    border: 1px solid #a69dc2;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover {
+      background-color: #a69dc2;
+      text-decoration: none;
+      background-image: none;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 952px) {
+  main .banner {
+    height: 35vh;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 90%;
+    }
+
+    .carousel {
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 90%;
+
+      .take-an-action {
+        position: absolute;
+        width: 100%;
+        z-index: 15;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .ze-action {
+          background: rgba(54, 54, 54, 0.5);
+          padding: 2%;
+          width: 65%;
+
+          h2 {
+            color: white;
+            font-size: 1.2rem;
+          }
+
+          button {
+            font-size: 80%;
+            margin: 0;
+            line-height: 1;
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            overflow: visible;
+            padding: 0.5rem;
+            font-weight: 300;
+            border-radius: 1px;
+            left: auto;
+            color: white;
+            background-color: #a69dc2;
+            border: 1px solid white;
+            display: inline-block;
+            background-image: none;
+            box-shadow: none;
+            text-shadow: none;
+
+            &:hover {
+              background-color: white;
+              text-decoration: none;
+              background-image: none;
+              border: 1px solid #a69dc2;
+              color: #a69dc2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .featured-products {
+    height: 12rem;
+    max-width: 98%;
+    border-radius: 2px;
+    margin-bottom: 2%;
+    display: block;
+
+    .carousel-control-prev {
+      display: inherit;
+      top: 40%;
+      width: 10%;
+    }
+
+    .carousel-control-next {
+      display: inherit;
+      top: 40%;
+      width: 10%;
+    }
+
+    .featured-product {
+      max-height: 12rem;
+      width: auto;
+      padding-bottom: 1%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main .banner {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 90%;
+    }
+
+    .carousel {
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 90%;
+
+      .take-an-action {
+        position: absolute;
+        width: 100%;
+        z-index: 15;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .ze-action {
+          background: rgba(54, 54, 54, 0.5);
+          padding: 2%;
+          width: 65%;
+
+          h2 {
+            color: white;
+            font-size: 1.2rem;
+          }
+
+          button {
+            font-size: 80%;
+            margin: 0;
+            line-height: 1;
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            overflow: visible;
+            padding: 0.5rem;
+            font-weight: 300;
+            border-radius: 1px;
+            left: auto;
+            color: white;
+            background-color: #a69dc2;
+            border: 1px solid white;
+            display: inline-block;
+            background-image: none;
+            box-shadow: none;
+            text-shadow: none;
+
+            &:hover {
+              background-color: white;
+              text-decoration: none;
+              background-image: none;
+              border: 1px solid #a69dc2;
+              color: #a69dc2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .featured-products {
+    height: 20rem;
+    max-width: 95%;
+    border-radius: 2px;
+    margin-bottom: 2%;
+    display: block;
+
+    .carousel-control-prev {
+      display: inherit;
+      top: 40%;
+    }
+
+    .carousel-control-next {
+      display: inherit;
+      top: 40%;
+    }
+
+    .featured-product {
+      max-height: 5rem;
+      width: auto;
+      padding-bottom: 1%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+/** Import Adobe Fonts **/
+@import url("https://use.typekit.net/fba5plc.css");
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$dark_blue: #1a535c;
+$teal: #4ecdc4;
+$cream: #fffff7;
+$red: #ff6b6b;
+$yellow: #ffe66d;
+
+$bernina: jaf-bernina-sans, sans-serif;
+$source: source-serif-pro, serif;

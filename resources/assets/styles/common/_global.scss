@@ -1,0 +1,61 @@
+body,
+footer {
+  background-color: $cream;
+  overflow-x: hidden !important;
+
+  .container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 2.6rem;
+}
+
+h2 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 2.4rem;
+}
+
+h3 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 2rem;
+}
+
+h4 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 1.75rem;
+}
+
+h5 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 1.25rem;
+}
+
+h6 {
+  color: $red;
+  font-family: $bernina;
+  font-size: 1.15rem;
+}
+
+p {
+  color: $dark_blue;
+  font-family: $source;
+  font-size: 1.15rem;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid $dark_blue;
+}
