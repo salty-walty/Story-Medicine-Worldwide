@@ -45,11 +45,11 @@
 }
 
 main .banner {
-  height: 75vh;
+  height: 88vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 
   img {
@@ -73,7 +73,7 @@ main .banner {
       position: absolute;
       width: 100%;
       z-index: 1;
-      top: 25%;
+      top: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -100,7 +100,7 @@ main .banner {
           border-radius: 1px;
           left: auto;
           color: white;
-          background-color: #a69dc2;
+          background-color: $dark_blue;
           border: 1px solid white;
           display: inline-block;
           background-image: none;
@@ -111,8 +111,8 @@ main .banner {
             background-color: white;
             text-decoration: none;
             background-image: none;
-            border: 1px solid #a69dc2;
-            color: #a69dc2;
+            border: 1px solid $dark_blue;
+            color: $dark_blue;
           }
         }
       }
@@ -169,83 +169,42 @@ main .banner {
 .creation {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  text-align: center;
-}
-
-.apparel {
-  background-size: cover !important;
-  margin: 0 auto;
-  font-size: 1.3rem;
-
-  a {
-    height: 100%;
-    width: 100%;
-    color: white;
-  }
-}
-
-.household {
-  background-size: cover !important;
-  margin: 0 auto;
-  font-size: 1.3rem;
-
-  a {
-    height: 100%;
-    width: 100%;
-    color: black;
-  }
 }
 
 .mother {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.featured-products {
-  height: 16rem;
-  width: 98%;
-  border-radius: 2px;
-  margin-bottom: 2%;
+.symbols {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 
-  .featured-product {
-    max-height: 15rem;
-    width: auto;
+  .mother {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .symbols-intro {
+      width: 60%;
+
+      h3 {
+        text-align: center;
+      }
+    }
   }
-}
 
-.ig-section {
-  a {
-    color: black;
-    text-decoration: underline;
-  }
+  .symbols-row {
+    text-align: center;
+    margin-top: 2rem;
 
-  #sb_instagram #sbi_load .sbi_load_btn,
-  #sb_instagram .sbi_follow_btn a {
-    font-size: 100%;
-    margin: 0;
-    line-height: 1;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    overflow: visible;
-    padding: 0.7rem;
-    font-weight: 300;
-    border-radius: 1px;
-    left: auto;
-    color: #a69dc2;
-    background-color: white;
-    border: 1px solid #a69dc2;
-    display: inline-block;
-    background-image: none;
-    box-shadow: none;
-    text-shadow: none;
-
-    &:hover {
-      background-color: #a69dc2;
-      text-decoration: none;
-      background-image: none;
-      color: white;
+    img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 0.5rem;
     }
   }
 }
@@ -309,7 +268,7 @@ main .banner {
             border-radius: 1px;
             left: auto;
             color: white;
-            background-color: #a69dc2;
+            background-color: $dark_blue;
             border: 1px solid white;
             display: inline-block;
             background-image: none;
@@ -320,38 +279,12 @@ main .banner {
               background-color: white;
               text-decoration: none;
               background-image: none;
-              border: 1px solid #a69dc2;
-              color: #a69dc2;
+              border: 1px solid $dark_blue;
+              color: $dark_blue;
             }
           }
         }
       }
-    }
-  }
-
-  .featured-products {
-    height: 12rem;
-    max-width: 98%;
-    border-radius: 2px;
-    margin-bottom: 2%;
-    display: block;
-
-    .carousel-control-prev {
-      display: inherit;
-      top: 40%;
-      width: 10%;
-    }
-
-    .carousel-control-next {
-      display: inherit;
-      top: 40%;
-      width: 10%;
-    }
-
-    .featured-product {
-      max-height: 12rem;
-      width: auto;
-      padding-bottom: 1%;
     }
   }
 }
@@ -415,7 +348,7 @@ main .banner {
             border-radius: 1px;
             left: auto;
             color: white;
-            background-color: #a69dc2;
+            background-color: $dark_blue;
             border: 1px solid white;
             display: inline-block;
             background-image: none;
@@ -426,8 +359,8 @@ main .banner {
               background-color: white;
               text-decoration: none;
               background-image: none;
-              border: 1px solid #a69dc2;
-              color: #a69dc2;
+              border: 1px solid $dark_blue;
+              color: $dark_blue;
             }
           }
         }

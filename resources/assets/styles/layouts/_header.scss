@@ -34,7 +34,7 @@ a {
 header {
   position: sticky;
   top: 0;
-  height: 3.6rem;
+  height: 6.5rem;
   width: 100%;
   background: $color_background;
   z-index: 49;
@@ -117,7 +117,8 @@ input.hamburger-button {
 // Menu CLOSED styles
 header .shmushmainer .menu {
   position: absolute;
-  top: 3.5rem;
+  // top: 3.5rem;
+  height: 6.5rem;
   left: calc(-100vw - 3rem); // VP + padding
   display: grid;
   grid-template-columns: 1fr;
@@ -144,7 +145,7 @@ header .shmushmainer .menu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-family: $bernina;
     align-items: center;
     left: 0;
@@ -152,16 +153,16 @@ header .shmushmainer .menu {
     height: 100vh;
 
     a {
-      color: $red;
+      color: $teal;
     }
 
     a:hover {
-      color: $red;
-      text-decoration: none;
+      color: $teal;
+      text-decoration: underline;
     }
 
     a:visited {
-      color: $red;
+      color: $teal;
     }
   }
 
@@ -280,14 +281,14 @@ header .shmushmainer .hamburger-button:checked {
 
 @media only screen and (min-width: $breakpoint_desktop) {
   header {
-    height: 3.5rem;
+    height: 7rem;
   }
 
   header .shmushmainer .menu {
     box-sizing: border-box;
     grid-template-columns: 4rem auto max-content;
     grid-template-rows: 1fr;
-    height: 100%;
+    height: 6.5rem;
     padding: 0 1.5rem;
     transition: none;
 
