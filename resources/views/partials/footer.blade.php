@@ -9,7 +9,7 @@
                 <div class="foot-border-right">
                     <div class="mother-footer">
                         <h3>Subscribe to our newsletter</h3>
-                        <?php echo do_shortcode( '[contact-form-7 id="28" title="Subscribe To Our Mailing List"]' ); ?>
+                        <?php echo do_shortcode( '[contact-form-7 id="165" title="Subscribe To Our Mailing List"]' ); ?>
                     </div>
                 </div>
     		</div>

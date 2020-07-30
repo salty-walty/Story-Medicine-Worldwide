@@ -1,0 +1,31 @@
+button {
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.7rem;
+  font-weight: 300;
+  border-radius: 1px;
+  left: auto;
+  color: white;
+  background-color: $dark_blue;
+  border: 1px solid white;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+
+  &:hover {
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    transition: border 0.5s ease;
+    background-color: white;
+    text-decoration: none;
+    background-image: none;
+    border: 1px solid $dark_blue;
+    color: $dark_blue;
+  }
+}
