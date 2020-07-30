@@ -1,3 +1,3 @@
-<div class="page-header">
+<div class="single-page-header">
 
 </div>

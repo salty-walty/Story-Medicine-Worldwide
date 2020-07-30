@@ -64,9 +64,9 @@ header .shmushmainer {
   border-bottom: 1px solid $color_border;
   background: $color_background;
   height: 3.5rem;
+  min-height: 110px;
 
   a.brand {
-    height: 3.5rem;
     width: 100%;
     z-index: 99;
 
@@ -99,7 +99,7 @@ input.hamburger-button {
       height: 0.125rem;
       width: 1.5rem;
       opacity: 1;
-      background: $color_text;
+      background: $dark_blue;
       transition: $transition_link;
     }
 
@@ -117,8 +117,7 @@ input.hamburger-button {
 // Menu CLOSED styles
 header .shmushmainer .menu {
   position: absolute;
-  // top: 3.5rem;
-  height: 6.5rem;
+  top: 3.5rem;
   left: calc(-100vw - 3rem); // VP + padding
   display: grid;
   grid-template-columns: 1fr;
@@ -145,12 +144,12 @@ header .shmushmainer .menu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-family: $bernina;
     align-items: center;
     left: 0;
     padding-left: 0.0001px;
-    height: 100vh;
+    position: fixed;
 
     a {
       color: $teal;
@@ -158,57 +157,251 @@ header .shmushmainer .menu {
 
     a:hover {
       color: $teal;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     a:visited {
       color: $teal;
     }
-  }
 
-  div.buttons {
-    grid-area: auto; // Unset from other layouts
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0.5rem 1rem;
-    border-top: 1px solid $color_border;
-    background: $color_background;
+    li.menu-item-has-children {
+      position: relative;
+      margin-right: 15px;
 
-    & > * {
-      flex: 1;
-      min-width: min-content;
-      margin: 0.5rem;
+      a {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+          content: " ";
+          width: 10px;
+          height: 15px;
+          background: url(../images/menu-drop.svg) no-repeat center;
+          background-size: contain;
+          display: inline-block;
+          position: absolute;
+          top: 30px;
+          right: -1px;
+          transition: transform 0.3s ease;
+          transform: rotate(0deg);
+          z-index: 100;
+        }
+      }
+
+      ul.sub-menu {
+        position: absolute;
+        width: fit-content;
+        z-index: 108;
+        background: rgba(255, 255, 247, 0.9);
+        margin-left: 1.3rem;
+        height: fit-content;
+        font-size: 1.1415927654rem;
+        text-align: left;
+        display: none;
+
+        @media (min-width: $breakpoint_desktop) {
+          border-top: 3px solid $teal;
+          box-shadow: 3px 1px 12px -7px #000;
+
+          li {
+            &:hover {
+              background: rgba(78, 205, 196, 0.1);
+            }
+          }
+        }
+
+        li {
+          line-height: 1;
+          width: 100%;
+          // border-bottom: 1px solid $teal;
+          padding: 0.5rem;
+
+          a {
+            cursor: pointer;
+            letter-spacing: 0.02em;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+            // &::before {
+            //   content: "";
+            //   width: 5px;
+            //   height: 5px;
+            //   display: block;
+            //   background: $dark_blue;
+            //   border-radius: 50%;
+            //   position: absolute;
+            //   top: 15px;
+            //   left: -3px;
+            // }
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &.current-menu-item {
+            a {
+              color: $teal;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        a {
+          @media (min-width: $breakpoint_desktop) {
+            &::after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        ul.sub-menu {
+          display: block;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint_tablet) {
+      display: none;
     }
   }
 }
 
-// Menu OPEN styles
-header .shmushmainer .hamburger-button:checked {
-  & ~ label {
-    & > div {
-      width: 0;
-      background: transparentize($color_text, 1);
+@media (max-width: $breakpoint_tablet) {
+  // Menu OPEN styles
+  header .shmushmainer .hamburger-button:checked {
+    & ~ label {
+      & > div {
+        width: 0;
+        background: transparentize($color_text, 1);
+      }
+
+      & > div::before {
+        transform: rotateZ(45deg);
+        top: 0;
+      }
+
+      & > div::after {
+        transform: rotateZ(-45deg);
+        top: 0;
+      }
     }
 
-    & > div::before {
-      transform: rotateZ(45deg);
-      top: 0;
-    }
+    & ~ .menu {
+      left: 0;
 
-    & > div::after {
-      transform: rotateZ(-45deg);
-      top: 0;
+      nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+
+        li {
+          min-height: 10%;
+          font-size: 2rem;
+        }
+
+        li.menu-item-has-children {
+          a {
+            &::after {
+              width: 10px;
+              height: 100%;
+              background: url(../images/menu-drop.svg) no-repeat center;
+              top: 1%;
+              right: -25px;
+            }
+          }
+
+          &.open {
+            a {
+              &::after {
+                transform: rotate(90deg);
+              }
+            }
+          }
+
+          ul.sub-menu {
+            top: -1%;
+            margin-left: 140%;
+
+            li {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
     }
   }
+}
 
-  & ~ .menu {
-    left: 0;
+@media (max-width: $breakpoint_mobile) and (max-width: $breakpoint_tablet) {
+  // Menu OPEN styles
+  header .shmushmainer .hamburger-button:checked {
+    & ~ .menu {
+      nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 15%;
+        width: 100%;
+        height: 100%;
 
-    nav ul li {
-      height: 10%;
-      font-size: 2rem;
+        li {
+          min-height: 10%;
+          font-size: 2rem;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        li.menu-item-has-children {
+          position: relative;
+          margin-right: 0.001px;
+
+          a {
+            &::after {
+              width: 10px;
+              height: 100%;
+              background: url(../images/menu-drop.svg) no-repeat center;
+              top: 1%;
+              right: -25px;
+            }
+          }
+
+          &.open {
+            a {
+              &::after {
+                transform: rotate(90deg);
+              }
+            }
+          }
+
+          ul.sub-menu {
+            display: none;
+            top: -1%;
+            // display: flex;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 15px;
+            list-style-type: disc;
+            text-align: center;
+
+            li {
+              font-size: 1.5rem;
+
+              a {
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -281,27 +474,19 @@ header .shmushmainer .hamburger-button:checked {
 
 @media only screen and (min-width: $breakpoint_desktop) {
   header {
-    height: 7rem;
+    height: 3.5rem;
   }
 
   header .shmushmainer .menu {
     box-sizing: border-box;
     grid-template-columns: 4rem auto max-content;
     grid-template-rows: 1fr;
-    height: 6.5rem;
+    height: 100%;
     padding: 0 1.5rem;
     transition: none;
 
     nav {
       grid-area: 1/2/2/3;
-    }
-
-    div.buttons {
-      grid-area: 1/3/2/4;
-
-      & > * {
-        min-width: max-content;
-      }
     }
 
     nav ul {
@@ -316,7 +501,7 @@ header .shmushmainer .hamburger-button:checked {
 
       & > li > a {
         width: max-content;
-        padding: 1.25rem 0.5rem;
+        padding: 1.25rem 1.5rem;
       }
     }
   }

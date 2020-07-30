@@ -1,10 +1,10 @@
 <header>
     <div class="shmushmainer">
+            <div class="">
         <a class="brand" href="{{ home_url('/') }}">
-            <div class="logo">
     			<img src="@asset('images/Logo.png')" class="logo">            
-            </div>
     	</a>
+            </div>
 
         <input class="hamburger-button" type="checkbox" id="hamburger-button" />
         <label for="hamburger-button">
