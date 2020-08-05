@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 
   &.button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     background: $color_text;
     color: $color_background;
     text-align: center;
@@ -182,13 +182,13 @@ header .shmushmainer .menu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: $bernina;
     align-items: center;
     left: 0 auto;
     padding-left: 0.0001px;
     position: fixed;
-    width: 80%;
+    width: 60%;
 
     a {
       color: $teal;
@@ -205,7 +205,7 @@ header .shmushmainer .menu {
 
     li.menu-item-has-children {
       position: relative;
-      margin-right: 15px;
+      margin-right: 5px;
 
       a {
         display: inline-block;
@@ -219,8 +219,8 @@ header .shmushmainer .menu {
           background-size: contain;
           display: inline-block;
           position: absolute;
-          top: 30px;
-          right: -1px;
+          top: 26px;
+          right: -4px;
           transition: transform 0.3s ease;
           transform: rotate(0deg);
           z-index: 100;
@@ -234,7 +234,7 @@ header .shmushmainer .menu {
         background: rgba(255, 255, 247, 0.9);
         margin-left: 1.3rem;
         height: fit-content;
-        font-size: 1.1415927654rem;
+        font-size: 1rem;
         text-align: left;
         display: none;
 
@@ -540,7 +540,7 @@ header .shmushmainer .menu {
 
       & > li > a {
         width: max-content;
-        padding: 1.25rem 1.5rem;
+        padding: 1.25rem 0.75rem;
       }
     }
   }

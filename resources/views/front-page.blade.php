@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
   <section class="">
     <?php 
       // ACF vars for the page

@@ -156,17 +156,19 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60 );
 
+if( function_exists('acf_register_block_type') ) {
+add_action('acf/init', function() {
 
-// working to deque woo on non woo pages...getting there
-
-// function remove_woocommerce_styles_scripts() {
-//     if ( function_exists( 'is_woocommerce' ) ) {
-//         if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-//             remove_action('wp_enqueue_scripts', [WC_Frontend_Scripts::class, 'load_scripts']);
-//         remove_action('wp_print_scripts', [WC_Frontend_Scripts::class, 'localize_printed_scripts'], 5);
-//         remove_action('wp_print_footer_scripts', [WC_Frontend_Scripts::class, 'localize_printed_scripts'], 5);
-//         }
-//     }
-// }
-
-// add_action( 'template_redirect', __NAMESPACE__ . '\\remove_woocommerce_styles_scripts', 999 );
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'Accordian Block',
+            'title'             => __('Accordian Block'),
+            'description'       => __('A custom accordian block.'),
+            'render_template'   => '../resources/views/partials/blocks/accordian.blade.php',
+            'category'          => 'formatting',
+            'icon'              => 'dashicons-sort',
+            'keywords'          => array( 'dropdown', 'quote' ),
+        ));
+    });
+    
+}

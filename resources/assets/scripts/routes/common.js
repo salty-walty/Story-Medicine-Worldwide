@@ -16,7 +16,6 @@ export default {
         jQuery('.full-wide').click(function() {
           jQuery(this).toggleClass('wide-open');
         });
-
         // jQuery( 'ul.products li.product' ).addClass( 'pretty-wrap' );
         // jQuery( 'li.pretty-wrap' ).wrap( '<div class="archive-img-wrap"/>' );
     });

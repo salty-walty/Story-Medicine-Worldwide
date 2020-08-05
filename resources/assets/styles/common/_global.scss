@@ -49,7 +49,10 @@ h6 {
   font-size: 1.15rem;
 }
 
-p {
+p,
+time,
+ul,
+ol {
   color: $dark_blue;
   font-family: $source;
   font-size: 1.15rem;
