@@ -15,8 +15,13 @@
 }
 
 .page-single {
+  max-width: 1200px;
+  margin: 0 auto;
+
   .heady {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     border-bottom: 1px solid $yellow;
 
     h1 {
@@ -80,4 +85,116 @@
   img {
     padding: 20px 0 20px 0;
   }
+}
+
+.carousel-repeater {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .carousel-item {
+    min-height: 575px;
+  }
+
+  .testi-text p {
+    min-height: 450px;
+    max-width: 85%;
+  }
+
+  .carousel-indicators {
+    top: 96%;
+
+    li {
+      background-color: $teal;
+    }
+  }
+
+  .carousel-control-prev {
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+    width: 5%;
+    color: $teal;
+    text-align: center;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.15s ease;
+    -o-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
+
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(69,123,157)' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+  }
+
+  .carousel-control-next {
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-end;
+    width: 5%;
+    color: $teal;
+    text-align: center;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.15s ease;
+    -o-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
+
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(69,123,157)' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+.entry-title {
+  padding-top: 25px;
+
+  a {
+    color: $teal;
+    font-family: $bernina;
+    font-size: 2.4rem;
+
+    &:hover {
+      color: $teal;
+      font-family: $bernina;
+      font-size: 2.4rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+header.tribe-events-header,
+header.tribe-events-calendar-month__header,
+header.tribe-events-calendar-list__event-header {
+  position: relative;
+  height: auto;
+  background: none;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+  padding-top: 10px;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-wrapper {
+  z-index: 1;
 }

@@ -1,4 +1,4 @@
-<div class="container page-single pad-the-top">
+<div class="page-single pad-the-top">
 	<div class="heady">		
 		<h1>
 			@php the_title() @endphp

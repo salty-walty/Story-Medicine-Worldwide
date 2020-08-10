@@ -159,14 +159,25 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_da
 if( function_exists('acf_register_block_type') ) {
 add_action('acf/init', function() {
 
-        // register a testimonial block.
+        // register a accordian block.
         acf_register_block_type(array(
             'name'              => 'Accordian Block',
             'title'             => __('Accordian Block'),
             'description'       => __('A custom accordian block.'),
             'render_template'   => '../resources/views/partials/blocks/accordian.blade.php',
             'category'          => 'formatting',
-            'icon'              => 'dashicons-sort',
+            'icon'              => 'dashicons-excerpt-view',
+            'keywords'          => array( 'dropdown', 'quote' ),
+        ));
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'Carousel Block',
+            'title'             => __('Carousel Block'),
+            'description'       => __('A custom carousel block.'),
+            'render_template'   => '../resources/views/partials/blocks/carousel.blade.php',
+            'category'          => 'formatting',
+            'icon'              => 'dashicons-slides',
             'keywords'          => array( 'dropdown', 'quote' ),
         ));
     });
