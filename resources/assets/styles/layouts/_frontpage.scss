@@ -168,8 +168,124 @@ main .banner {
 }
 
 .creation {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url("../images/Story_Medicine_Group.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 920px;
+
+  .creation-inner {
+    height: 95%;
+    width: 92%;
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .sm-is {
+      width: 90%;
+      height: auto;
+      padding-top: 1.5%;
+      margin-bottom: -24px;
+    }
+
+    .sm-util {
+      width: 90%;
+      height: auto;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding-left: 2.8em;
+          text-indent: -3em;
+          height: 10%;
+          line-height: 10px;
+          padding-top: 4px;
+        }
+
+        li::before {
+          background: url("../images/akok.gif") no-repeat center center;
+          background-size: contain;
+          content: " ";
+          display: inline-block;
+          margin: 0 -8px 0 0;
+          height: 30px;
+          width: 34px;
+          vertical-align: middle;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 785px) {
+    height: 620px;
+
+    .creation-inner {
+      height: 92%;
+      width: 81%;
+      background-color: $cream;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: top;
+
+      .sm-is {
+        width: 38%;
+        height: 100%;
+        padding-top: 1.5%;
+
+        div {
+          height: 100%;
+        }
+      }
+
+      .sm-util {
+        width: 48%;
+        height: 100%;
+        padding-top: 1.5%;
+
+        div {
+          height: 100%;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          height: 90%;
+
+          li {
+            padding-left: 2.8em;
+            text-indent: -3em;
+            height: 10%;
+          }
+
+          li::before {
+            background: url("../images/akok.gif") no-repeat center center;
+            background-size: contain;
+            content: " ";
+            display: inline-block;
+            margin: 0 -8px 0 0;
+            height: 30px;
+            width: 34px;
+            vertical-align: middle;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
 }
 
 .mother {

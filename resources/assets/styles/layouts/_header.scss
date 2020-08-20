@@ -89,6 +89,7 @@ input.hamburger-button {
     padding: 0.25rem;
     width: 1.5rem;
     height: 1.25rem;
+    z-index: 11;
 
     & > div,
     & > div::before,
@@ -125,15 +126,6 @@ header .shmushmainer .menu {
   width: 100%;
   background: $color_background;
   transition: $transition_anim;
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
-    background: $color_background;
-  }
 
   nav {
     grid-area: auto; // Unset from other layouts
@@ -329,12 +321,17 @@ header .shmushmainer .menu {
     & ~ .menu {
       left: 0;
 
+      nav {
+        padding-top: 5%;
+      }
+
       nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 80%;
+        left: 0;
 
         li {
           min-height: 10%;
@@ -388,7 +385,7 @@ header .shmushmainer .menu {
 
         li {
           min-height: 10%;
-          font-size: 2rem;
+          font-size: 1.35rem;
           position: relative;
           display: flex;
           flex-direction: column;
@@ -430,7 +427,7 @@ header .shmushmainer .menu {
             text-align: center;
 
             li {
-              font-size: 1.5rem;
+              font-size: 1.25rem;
 
               a {
                 &::before {

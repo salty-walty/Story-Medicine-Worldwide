@@ -74,27 +74,26 @@
 		  	</div>
   		</div>
   	</div>
-  	<div class="row creation">
-  		<div class="col-md-1"></div>
-      <div class="col-md-4">
-        <h3>
-          <?php echo $lch; ?>
-        </h3>
-        <div>
-          <?php echo $lcc; ?>
+    <div class="creation">
+    	<div class="creation-inner">
+        <div class="sm-is">
+          <h3>
+            <?php echo $lch; ?>
+          </h3>
+          <div>
+            <?php echo $lcc; ?>
+          </div>
         </div>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-        <h3>
-          <?php echo $rch; ?>
-        </h3>
-        <div>
-          <?php echo $rcc; ?>
+        <div class="sm-util">
+          <h3>
+            <?php echo $rch; ?>
+          </h3>
+          <div>
+            <?php echo $rcc; ?>
+          </div>
         </div>
-      </div>
-  		<div class="col-md-1"></div>
-  	</div>
+    	</div>
+    </div>
 
     <div class="row symbols">
       <div class="col-md-1"></div>
