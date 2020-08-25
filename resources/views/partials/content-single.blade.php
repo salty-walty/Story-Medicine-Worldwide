@@ -1,10 +1,6 @@
 <article @php post_class() @endphp>
   <div class="container">
       <div class="guide">
-          <h1>
-            @php the_title() @endphp
-          </h1>
-          <hr>
           <div class="entry-content">
             @php the_content() @endphp
           </div>

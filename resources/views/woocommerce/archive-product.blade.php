@@ -20,7 +20,7 @@ the readme will list any important changes.
   @endphp
 
 <div class="shop-page">
-  <header class="woocommerce-products-header">
+  <div class="woocommerce-products-header">
     @php
     do_action('woocommerce_before_main_content');
     @endphp
@@ -31,7 +31,7 @@ the readme will list any important changes.
     @php
       do_action('woocommerce_archive_description');
     @endphp
-  </header>
+  </div>
 
   @if(woocommerce_product_loop())
     @php

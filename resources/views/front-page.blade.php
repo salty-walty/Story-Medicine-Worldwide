@@ -5,6 +5,10 @@
     <?php 
       // ACF vars for the page
       $btbt = get_field('below_the_banner_text');
+      $left_image = get_field('first_row_left_image');
+      $center_image = get_field('first_row_center_image');
+      $right_image = get_field('first_row_right_image');
+      $creation = get_field('creation_background');
       $lch = get_field('left_column_header');
       $lcc = get_field('left_column_content');
       $rch = get_field('right_column_header');
@@ -74,7 +78,41 @@
 		  	</div>
   		</div>
   	</div>
-    <div class="creation">
+    <div class="our-work">
+      <h2 class="text-center my-4">
+        <?php echo $btbt; ?>
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="first-row">
+            <div class="first-row-inner" style="background: url(<?php echo $left_image['url'];?>)">
+              <h4>
+                Life Changing
+              </h4>
+            </div>          
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="first-row">
+            <div class="first-row-inner" style="background: url(<?php echo $center_image['url'];?>)">      
+              <h4>
+                Community Building
+              </h4>
+            </div>          
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="first-row">
+            <div class="first-row-inner" style="background: url(<?php echo $right_image['url'];?>)">      
+              <h4>
+                Language Preserving
+              </h4>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="creation" style="background: url(<?php echo $creation['url'];?>)">
     	<div class="creation-inner">
         <div class="sm-is">
           <h3>

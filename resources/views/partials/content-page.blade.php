@@ -1,10 +1,5 @@
-<div class="page-single pad-the-top">
-	<div class="heady">		
-		<h1>
-			@php the_title() @endphp
-		</h1>
-	</div>
-	<div class="entry-content pad-the-top">
+<div class="page-single single-page">
+	<div class="entry-content">
 	@php the_content() @endphp
 	</div>
 </div>

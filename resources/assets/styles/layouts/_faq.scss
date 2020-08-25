@@ -2,6 +2,13 @@
   .accordion-container {
     width: 100%;
   }
+
+  .full-wide {
+    svg {
+      height: 4%;
+      width: 4%;
+    }
+  }
 }
 
 .full-wide {
@@ -13,8 +20,15 @@
     display: none;
   }
 
-  h5 {
+  svg {
+    margin-top: 10%;
+    height: 35px;
+    width: 35px;
+  }
+
+  h4 {
     display: inline-block;
+    max-width: 90%;
   }
 
   &:hover {
