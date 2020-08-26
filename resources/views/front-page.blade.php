@@ -6,8 +6,14 @@
       // ACF vars for the page
       $btbt = get_field('below_the_banner_text');
       $left_image = get_field('first_row_left_image');
+      $left_link = get_field('first_row_left_link');
+      $left_text = get_field('first_row_left_text');
       $center_image = get_field('first_row_center_image');
+      $center_link = get_field('first_row_center_link');
+      $center_text = get_field('first_row_center_text');
       $right_image = get_field('first_row_right_image');
+      $right_link = get_field('first_row_right_link');
+      $right_text = get_field('first_row_right_text');
       $creation = get_field('creation_background');
       $lch = get_field('left_column_header');
       $lcc = get_field('left_column_content');
@@ -85,28 +91,34 @@
       <div class="row">
         <div class="col-md-4">
           <div class="first-row">
-            <div class="first-row-inner" style="background: url(<?php echo $left_image['url'];?>)">
-              <h4>
-                Life Changing
-              </h4>
+              <div class="first-row-inner" style="background: url(<?php echo $left_image['url'];?>)">
+                <a href="<?php echo $left_link; ?>">            
+                  <h4>
+                    <?php echo $left_text; ?>
+                  </h4>
+                </a>
+              </div>          
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="first-row">
+            <div class="first-row-inner" style="background: url(<?php echo $center_image['url'];?>)">
+              <a href="<?php echo $center_link; ?>">             
+                <h4>
+                  <?php echo $center_text; ?>
+                </h4>
+              </a>      
             </div>          
           </div>
         </div>
         <div class="col-md-4">
           <div class="first-row">
-            <div class="first-row-inner" style="background: url(<?php echo $center_image['url'];?>)">      
-              <h4>
-                Community Building
-              </h4>
-            </div>          
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="first-row">
-            <div class="first-row-inner" style="background: url(<?php echo $right_image['url'];?>)">      
-              <h4>
-                Language Preserving
-              </h4>
+            <div class="first-row-inner" style="background: url(<?php echo $right_image['url'];?>)">
+              <a href="<?php echo $right_link; ?>">       
+                <h4>
+                  <?php echo $right_text; ?>
+                </h4>
+              </a>
             </div>          
           </div>
         </div>

@@ -1,5 +1,5 @@
-$breakpoint_tablet: 843px;
-$breakpoint_desktop: 844px;
+$breakpoint_tablet: 876px;
+$breakpoint_desktop: 877px;
 $breakpoint_mobile: 550px;
 $max_header_width: 100%;
 
@@ -49,6 +49,10 @@ header {
 }
 
 header .shmushmainer {
+  &.fit-it {
+    position: fixed !important;
+  }
+
   position: absolute;
   box-sizing: border-box;
   top: 0;
@@ -323,14 +327,22 @@ header .shmushmainer .menu {
 
       nav {
         padding-top: 5%;
+
+        .cart-contents {
+          position: fixed;
+          z-index: 200;
+          top: 100px;
+          right: 50px;
+        }
       }
 
       nav ul {
+        padding-top: 5%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
-        height: 80%;
+        height: 100%;
         left: 0;
 
         li {
@@ -339,6 +351,10 @@ header .shmushmainer .menu {
         }
 
         li.menu-item-has-children {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
           a {
             &::after {
               width: 10px;
@@ -358,11 +374,24 @@ header .shmushmainer .menu {
           }
 
           ul.sub-menu {
+            display: none;
             top: -1%;
-            margin-left: 140%;
+            // display: flex;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 15px;
+            list-style-type: none;
+            text-align: center;
 
             li {
               font-size: 1.5rem;
+
+              a {
+                &::before {
+                  display: none;
+                }
+              }
             }
           }
         }
@@ -375,6 +404,15 @@ header .shmushmainer .menu {
   // Menu OPEN styles
   header .shmushmainer .hamburger-button:checked {
     & ~ .menu {
+      nav {
+        .cart-contents {
+          position: fixed;
+          z-index: 200;
+          top: 7%;
+          right: 38%;
+        }
+      }
+
       nav ul {
         display: flex;
         align-items: center;
@@ -423,7 +461,7 @@ header .shmushmainer .menu {
             width: 80%;
             margin: 0 auto;
             padding-top: 15px;
-            list-style-type: disc;
+            list-style-type: none;
             text-align: center;
 
             li {

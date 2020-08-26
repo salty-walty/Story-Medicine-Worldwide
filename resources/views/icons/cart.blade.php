@@ -1,7 +1,10 @@
 <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
-	$count = WC()->cart->cart_contents_count;
-	?>
+$count = WC()->cart->cart_contents_count;
+?>
+<?php 
+   if ( $count > 0 ) {
+?>
 	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 450.391 450.391" style="enable-background:new 0 0 450.391 450.391;" xml:space="preserve">
@@ -57,9 +60,7 @@
 </g>
 </svg>
 	
-	<?php 
-	    if ( $count > 0 ) {
-	        ?>
+
 		<span class="cart-count">
 	       <?php echo esc_html( $count ); ?>
 		</span>

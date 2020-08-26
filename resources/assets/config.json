@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/StoryMedicineWordwide",
-  "devUrl": "http://storymedicineworldwide.local/",
+  "devUrl": "http://storymedicineworldwide.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

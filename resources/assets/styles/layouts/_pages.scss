@@ -1,5 +1,7 @@
 .single-page {
-  padding: 2% 11% 1 % 11%;
+  padding: 0 25px 0 25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .pad-it {
@@ -104,9 +106,6 @@
 }
 
 .page-single {
-  max-width: 1200px;
-  margin: 0 auto;
-
   .heady {
     width: 100%;
     max-width: 1200px;

@@ -1,0 +1,12 @@
+.entry-summary {
+  p {
+    a {
+      color: $teal;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

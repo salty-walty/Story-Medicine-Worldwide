@@ -23,4 +23,3 @@ const routes = new Router({
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
 
-import 'magnific-popup/dist/jquery.magnific-popup.js';
