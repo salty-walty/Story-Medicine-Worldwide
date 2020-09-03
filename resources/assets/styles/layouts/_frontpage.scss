@@ -1,5 +1,5 @@
 main .banner {
-  padding-top: 3rem;
+  padding-top: 0.5rem;
   height: 93vh;
   width: 100%;
   display: flex;
@@ -7,6 +7,7 @@ main .banner {
   align-items: flex-start;
   overflow: hidden;
   min-height: 150px;
+  z-index: 1;
 
   img {
     flex-shrink: 0;
@@ -16,6 +17,7 @@ main .banner {
     max-width: 100%;
     max-height: 90%;
     object-position: center; /* Center the image within the element */
+    z-index: 2;
   }
 
   .carousel {
@@ -29,7 +31,7 @@ main .banner {
     .take-an-action {
       position: absolute;
       width: 100%;
-      z-index: 1;
+      z-index: 3;
       // top: 22vh;
       height: 90%;
       max-height: 80vh;
@@ -43,6 +45,7 @@ main .banner {
         padding: 1.5%;
         max-width: 72%;
         margin-top: 24%;
+        z-index: 4;
 
         h2 {
           color: $cream;
@@ -147,7 +150,7 @@ main .banner {
 @media (max-width: 768px) {
   main .banner {
     padding-top: 0.01rem;
-    height: 69vh;
+    height: 85vh;
     background: $teal;
     justify-content: flex-start;
     align-items: flex-start;
@@ -164,7 +167,7 @@ main .banner {
         }
 
         .take-an-action {
-          margin-top: 8%;
+          margin-top: 10%;
 
           .ze-action {
             padding: 2% 1.25% 2% 1.25%;
@@ -219,7 +222,7 @@ main .banner {
 
 .first-row {
   position: relative;
-  height: 420px;
+  height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -227,7 +230,7 @@ main .banner {
   padding-bottom: 1.5%;
 
   .first-row-inner {
-    height: 90%;
+    height: 80%;
     width: 80%;
     border-radius: 100%;
     display: flex;
