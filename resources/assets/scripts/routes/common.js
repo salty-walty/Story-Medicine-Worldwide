@@ -5,7 +5,7 @@ export default {
 
         let w = jQuery(window).width();
 
-        if ( w < 852) {
+        if ( w < 1080) {
           jQuery('#menu-main-menu').children('.menu-item-has-children').children('a').click(function(e) {
             e.preventDefault();
             console.log('clicked!')

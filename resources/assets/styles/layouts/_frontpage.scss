@@ -1,6 +1,6 @@
 main .banner {
-  padding-top: 0.5rem;
-  height: 93vh;
+  padding-top: 4%;
+  height: 92vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ main .banner {
     }
 
     .carousel-indicators {
-      top: 99%;
+      top: 105%;
 
       li {
         background-color: $teal;
@@ -149,7 +149,7 @@ main .banner {
 
 @media (max-width: 768px) {
   main .banner {
-    padding-top: 0.01rem;
+    padding-top: 40px;
     height: 85vh;
     background: $teal;
     justify-content: flex-start;

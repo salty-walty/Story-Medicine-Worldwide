@@ -1,5 +1,5 @@
-$breakpoint_tablet: 1043px;
-$breakpoint_desktop: 1044px;
+$breakpoint_tablet: 1079px;
+$breakpoint_desktop: 1080px;
 $breakpoint_mobile: 550px;
 $max_header_width: 100%;
 
@@ -63,23 +63,24 @@ header .shmushmainer {
   justify-content: space-between;
   width: 100%;
   max-width: $max_header_width;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0 0.5rem;
   margin: 0 auto;
   border-bottom: 1px solid $color_border;
   background: $color_background;
-  height: 3.5rem;
+  height: 150px;
   min-height: 110px;
 
   a.brand {
-    width: 125px;
+    width: auto;
     z-index: 105;
 
     .logo {
       display: inline-flex;
       width: auto;
-      height: 100px;
-      margin-left: 10px;
-      max-height: 12rem;
+      height: 148px;
+      margin-left: 1px;
+      margin-top: -2px;
+      max-height: 148px;
     }
   }
 }
@@ -141,7 +142,7 @@ header .shmushmainer .menu {
       height: 60px;
       z-index: 108;
       margin-right: 10px;
-      margin-top: 42px;
+      margin-top: 62px;
       margin-left: auto;
 
       .cart-contents {
@@ -161,10 +162,11 @@ header .shmushmainer .menu {
 
         .cart-count {
           position: fixed;
-          padding: 1px 7px 10px 7px;
-          margin: -10px 1px 1px 10px;
+          padding: 1px 7px 10px 9px;
+          margin: -10px 1px 1px 3px;
           height: 25px;
           width: auto;
+          min-width: 25px;
           background: $yellow;
           border-radius: 100%;
           color: $cream;
@@ -408,8 +410,8 @@ header .shmushmainer .menu {
         .cart-contents {
           position: fixed;
           z-index: 200;
-          top: 7%;
-          right: 38%;
+          top: 9%;
+          right: 25%;
         }
       }
 
@@ -417,7 +419,7 @@ header .shmushmainer .menu {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 15%;
+        padding-top: 24%;
         width: 100%;
         height: 100%;
 
@@ -556,7 +558,6 @@ header .shmushmainer .menu {
     grid-template-columns: 4rem auto max-content;
     grid-template-rows: 1fr;
     height: 100%;
-    padding: 0 1.5rem;
     transition: none;
 
     nav {
