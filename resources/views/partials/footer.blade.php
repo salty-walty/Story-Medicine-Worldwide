@@ -8,6 +8,9 @@
                     <p>
                         © 2020 Story Medicine Worldwide ASHEVILLE, NC
                     </p>
+                    <p>
+                        <a href="https://webdevavl.com" target="_blank">Asheville Web Design & Development</a> by Dundee
+                    </p>
                 </div>
     		</div>
             <div class="col-md-4">

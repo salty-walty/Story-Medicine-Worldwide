@@ -19,6 +19,13 @@ footer {
 
       p {
         color: $teal;
+
+        a {
+          color: $teal;
+          font-family: $source;
+          font-size: 1.2rem;
+          text-decoration: none;
+        }
       }
 
       ul {
